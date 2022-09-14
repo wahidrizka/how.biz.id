@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howbizz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/hero.png">
+</head>
+<body>
+    <header>
+        <h1>Howbizz</h1>
+
+        <section class="menu opened">
+            <ul class="menu-list">
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">Tentang Howbizz</a></li>
+                <li><a href="./benefits.html">Benefits</a></li>
+                <li><a href="./contact.html">Hubungi Kami</a></li>
+                <li class="button"><a href="./comingsoon.html">Masuk</a></li>
+            </ul>
+
+            <button>
+                <ion-icon size="large" class="menu-outline" name="menu-outline"></ion-icon>
+                <ion-icon size="large" class="close-outline" name="close-outline"></ion-icon>
+            </button>
+        </section>
+    </header>
+
+    <main>
+        <section class="main">
+
+            <section class="left">
+                <p class="title">Bootstrap your early professional career!</p>
+                <p class="detail">
+                    Howbizz adalah platform inkubasi digital yang akan membimbing 
+                    kamu seorang mahasiswa IT untuk siap menjadi talenta digital 
+                    yang relevan dengan revolusi industri saat ini.
+                </p>
+                <button class="selengkapnya">
+                    <a href="./about.html">Selengkapnya</a>
+                </button>
+                <button class="daftar-sekarang"> 
+                    <a href="./comingsoon.html">Daftar sekarang</a> 
+                </button>
+            </section>
+
+            <section class="right">
+                <img src="./assets/images/img.png" alt="">
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-item">
+            <p>© 2020 - 2021</p>
+            <img height="24px" src="./assets/images/hero.png" alt="">
+            <p class="hero-logo">Howbizz</p>
+            <p>| All rights reserved</p>     
+        </div>
+    </footer>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5717CYG4G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-B5717CYG4G');
+    </script>
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

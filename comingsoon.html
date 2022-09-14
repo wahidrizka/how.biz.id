@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howbizz is still under development</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/hero.png">
+</head>
+<body>
+    <header>
+        <h1>Howbizz</h1>
+
+        <section class="menu opened">
+            <ul class="menu-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">Tentang Howbizz</a></li>
+                <li><a href="./benefits.html">Benefits</a></li>
+                <li><a href="./contact.html">Hubungi Kami</a></li>
+                <li class="button"><a href="./comingsoon.html">Masuk</a></li>
+            </ul>
+
+            <button>
+                <ion-icon size="large" class="menu-outline" name="menu-outline"></ion-icon>
+                <ion-icon size="large" class="close-outline" name="close-outline"></ion-icon>
+            </button>
+        </section>
+    </header>
+    <main>
+        <section class="main">
+            <section class="comingsoon">
+                <h1 class="title">COMINGSOON!</h1>
+                <img src="./assets/images/develope.gif" alt="Development Illustration">
+                <div class="card">
+                    <h3>Kamu sepertinya tertarik dengan Howbizz ;)</h3>
+                    <p>Hanya saja saat ini kami masih mempersiapkan semuanya yang terbaik untuk kamu! Jika kamu tertarik menjadi orang yang pertama menggunakan Howbizz, kamu bisa mengisi surveinya agar bisa tahu lebih banyak tentang solusi yang Howbizz akan hadirkan.</p>
+                    <button class="daftar-sekarang"> 
+                        <a href="/survey">Isi Survey</a> 
+                    </button>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-item">
+            <p>© 2020 - 2021</p>
+            <img height="24px" src="./assets/images/hero.png" alt="">
+            <p class="hero-logo">Howbizz</p>
+            <p>| All rights reserved</p>     
+        </div>
+    </footer>
+    
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

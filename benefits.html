@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/hero.png">
+</head>
+<body>
+    <header>
+        <h1>Howbizz</h1>
+
+        <section class="menu opened">
+            <ul class="menu-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">Tentang Howbizz</a></li>
+                <li class="active"><a href="./benefits.html">Benefits</a></li>
+                <li><a href="./contact.html">Hubungi Kami</a></li>
+                <li class="button"><a href="./comingsoon.html">Masuk</a></li>
+            </ul>
+
+            <button>
+                <ion-icon size="large" class="menu-outline" name="menu-outline"></ion-icon>
+                <ion-icon size="large" class="close-outline" name="close-outline"></ion-icon>
+            </button>
+        </section>
+    </header>
+    <main>
+        <section class="main">
+
+            <section class="benefits">
+                <h1 class="title">Benefits</h2>
+                <div class="benefits-nav">
+                    <button class="tablink" onclick="openPage('Students', this, '#263238')" id="defaultOpen">
+                        Students
+                    </button>
+                    <button class="tablink" onclick="openPage('Industries', this, '#263238')">
+                        Industries
+                    </button>
+
+                    <div id="Students" class="tabcontent">
+                        <div class="students-tab">
+                            <div class="card">
+                                <h3>Connect</h3>
+                                <p>Dengan mentor, orang-orang di industri, dan mahasiswa lainnya.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Grow and Assess</h3>
+                                <p>Tetapkan tujuan karier Anda dan kami akan mempersiapkan serta memandu Anda untuk mencapai tujuan tersebut melalui berbagai program akademi.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Work</h3>
+                                <p>Individu atau bekerja sama dengan orang lain untuk mengerjakan proyek outsourcing, atau dipekerjakan sebagai gantinya!</p>
+                            </div>
+                        </div>
+                    </div>
+                              
+                    <div id="Industries" class="tabcontent">
+                        <div class="industries-tab">
+                            <div class="card">
+                                <h3>Effective Talent Sourcing</h3>
+                                <p>Kami tidak hanya membantu perekrut untuk mencari dan mempersiapkan talenta sesuai dengan kebutuhan bisnisnya, kami juga membantu mereka untuk menilai talenta tersebut. Jadi, perekrut akan mendapatkan talenta terbaik yang sangat sesuai dengan kebutuhan bisnis, budaya perusahaan, dan nilai-nilai mereka dan siap untuk dipekerjakan. Secara efektif menghemat waktu dan energi perekrut yang berharga sekaligus mendapatkan hasil yang lebih baik.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Small to Mid Sized Project Outsourcing</h3>
+                                <p>Bukan tech company? Anda memiliki kendala anggaran yang ketat untuk mempekerjakan seorang senior engineer? atau memiliki freelancer bukan favoritmu? Serahkan proyek outsourcing Anda kepada kami. Kami akan bertindak sebagai project manager Anda dan membiarkan talents luar biasa kami melaksanakannya. Sempurna untuk mereka yang ingin membangun produk kecil atau MVP, dan mereka yang membutuhkan bantuan dalam transformasi digital mereka.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+    
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-item">
+            <p>© 2020 - 2021</p>
+            <img height="24px" src="./assets/images/hero.png" alt="">
+            <p class="hero-logo">Howbizz</p>
+            <p>| All rights reserved</p>     
+        </div>
+    </footer>
+    
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+
+        function openPage(pageName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

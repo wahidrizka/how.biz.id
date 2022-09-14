@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    color: #000;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+    font-size: 13px;
+    background-color: #fff;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 2.7em;
+    letter-spacing: 1px;
+    color: #ffc000;
+}
+
+.menu {
+    display: flex;
+    margin-right: 30px;
+}
+
+.menu button {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: #ffc000;
+    outline: none;
+    font-size: 1.7em;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu ion-icon.close-outline,
+.menu.opened ion-icon.menu-outline {
+    display: none;
+}
+
+.menu.opened ion-icon.close-outline,
+.menu ion-icon.menu-outline {
+    display: block;
+    animation: enter 0.8s;
+}
+
+@keyframes enter {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-list li {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.menu-list li.button {
+    border: none;
+    outline: none;
+    padding: 1px 15px;
+    background-color: #ffc000;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.menu-list li.active {
+    font-weight: bold;
+    border-bottom: 3px solid #ffc000;
+
+}
+
+.menu-list li:hover {
+    font-weight: bold;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main {
+    margin-top: 32px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #B0BEC5;
+}
+
+.right img {
+    width: 100%;
+}
+
+.left img {
+    width: 100%;
+}
+
+.left {
+    max-width: 50%;
+    padding: 50px;
+    padding-left: 60px;
+}
+
+.right {
+   padding: 0px;
+}
+
+.title {
+    color: #ffc000;
+    font-size: 2.6em;
+    width: 100%;
+    font-weight: bold;
+}
+
+.detail {
+    color: #000;
+    font-size: 1.1em;
+    letter-spacing: 0.7px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    width: 90%;
+    font-weight: normal;
+}
+
+.vision, .mission {
+    display: flex;
+    padding: 60px;
+    border-bottom: 1px solid #B0BEC5;
+}
+
+.vision h1, .mission h1 {
+    letter-spacing: 0.7px;
+    font-size: 2.3em;
+    color: #ffc000;
+}
+
+.vision p, .mission p {
+    letter-spacing: 0.7px;
+    font-size: 1.3em;
+    color: #263238;
+}
+
+.vision-left, .vision-right {
+    flex: 50%;
+}
+
+.mission-left, .mission-right {
+    flex: 50%;
+}
+
+.vision img, .mission img {
+    width: 100%;
+}
+
+.partners {
+    text-align: center;
+    padding: 60px;
+    border-bottom: 1px solid #B0BEC5;
+}
+
+.partners h1 {
+    letter-spacing: 0.7px;
+    font-size: 2.3em;
+    color: #ffc000;
+}
+
+.partners-logo {
+    margin-top: 24px;
+    display: flex;
+    padding: 15px;
+}
+
+.amikom, .abp, .amcc {
+    flex: 20%;
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.amikom img {
+    max-width: 100%;
+    margin-top: 25px;
+}
+
+.abp img {
+    max-width: 63%;
+    margin-top: 25px;
+} 
+
+.amcc img {
+    max-width: 37%;
+}
+
+#Students {
+    background-color: #263238;
+}
+
+#Industries {
+    background-color: #263238;
+}
+
+.benefits {
+    padding-top: 50px;
+    padding: 30px;
+    margin: 30px;
+    width: 100%;
+}
+
+.benefits h1 {
+    text-align: center;
+}
+
+.benefits-nav {
+    background-color: #ffc000;
+    margin-top: 50px;
+    border-radius: 2px;
+}
+
+.tablink {
+    background-color: #ffc000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    padding: 20px 20px;
+    color: #fff;
+}
+
+.tablinks:hover {
+    font-weight: bold;
+}
+
+.tabcontent {
+    color: #fff;
+    padding: 100px 50px;
+    display: none;
+}
+
+.students-tab, .industries-tab {
+    display: flex;
+}
+
+
+.card {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #ffc000;
+    padding: 13px;
+    margin: 18px;
+}
+
+.card h3 {
+    border-bottom: 1px solid #ffc000;
+    margin: 13px;
+}
+
+.card p {
+    margin: 13px;
+}
+
+.contact {
+    padding-top: 50px;
+    padding: 30px;
+    margin: 30px;
+    width: 100%;
+}
+
+.contact h1, p {
+    text-align: center;
+}
+
+ .contact img {
+    width: 100%;
+}
+
+.contact p {
+    font-size: 1.7em;
+}
+
+.comingsoon {
+    padding-top: 50px;
+    padding: 30px;
+    margin: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.comingsoon .card {
+    background-color: #263238;
+    color: #fff;
+    border: 3px solid #ffc000;
+}
+
+.comingsoon .card h3 {
+    border-bottom: 3px solid #ffc000;
+}
+
+button.selengkapnya a, button.daftar-sekarang a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+button.selengkapnya {
+    border: 1px solid;
+    border-color: #ffc000;
+    outline: none;
+    background-color: transparent;
+    color: #ffc000;
+    padding: 15px 30px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+}
+
+button.daftar-sekarang {
+    border: none;
+    outline: none;
+    background-color: #ffc000;
+    color: #fff;
+    padding: 15px 30px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+    text-decoration: none;
+}
+
+button.selengkapnya:hover,
+button.daftar-sekarang:hover {
+    opacity: 0.9;
+}
+
+.footer-item {
+    display: flex;
+    padding: 30px;
+}
+
+.footer-item p {
+    color: #263238;
+    opacity: 70%;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+p.hero-logo {
+    color: #ffc000;
+    font-weight: bold;
+}
+
+/* Responsive */
+
+@media (max-width: 869px) {
+    header h1 {
+        font-size: 2.3em;
+    }
+
+    .menu-list li {
+        font-size: 1em;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        max-width: 100%;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        font-size: 0.8em;
+    }
+
+    .left * {
+        width: 95%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    button.selengkapnya,
+    button.daftar-sekarang {
+        max-width: 80%;
+    }
+
+    .right img {
+        width: 80%;
+    }
+
+    .students-tab, .industries-tab {
+        flex-direction: column;
+    }
+
+    .partners-logo {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 811px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        max-width: 100%;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        font-size: 0.8em;
+    }
+
+    .left * {
+        width: 95%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    button.selengkapnya,
+    button.daftar-sekarang {
+        max-width: 80%;
+    }
+
+    .right img {
+        width: 80%;
+    }
+
+    /* nav menu responsive */
+
+    .menu button {
+        display: block;
+    }
+
+    .menu-list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100%;
+        background-color: #ffc000;
+        padding: 46px;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 80px;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+    }
+
+    .menu-list li {
+        font-size: 1.7em;
+        margin: 32px 0px;
+    }
+
+    .menu.opened .menu-list {
+        transform: translateX(0);
+    }
+
+    .menu.opened button {
+        color: #000;
+    }
+    .menu-list li.button {
+        color: #000;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Howbizz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/hero.png">
+</head>
+<body>
+    <header>
+        <h1>Howbizz</h1>
+
+        <section class="menu opened">
+            <ul class="menu-list">
+                <li><a href="./index.html">Home</a></li>
+                <li class="active"><a href="./about.html">Tentang Howbizz</a></li>
+                <li><a href="./benefits.html">Benefits</a></li>
+                <li><a href="./contact.html">Hubungi Kami</a></li>
+                <li class="button"><a href="./comingsoon.html">Masuk</a></li>
+            </ul>
+
+            <button>
+                <ion-icon size="large" class="menu-outline" name="menu-outline"></ion-icon>
+                <ion-icon size="large" class="close-outline" name="close-outline"></ion-icon>
+            </button>
+        </section>
+    </header>
+    <main>
+        <section class="main">
+
+            <section class="left">
+                <h1 class="title">Halo, kami adalah Howbizz.</h2>
+                <h3 class="detail">Howbizz sedang mengembangkan platform inkubasi talenta digital untuk membantu mahasiswa agar bisa terhubung, tumbuh, dan bekerja langsung dengan industri tanpa investasi awal yang tinggi dan untuk membantu industri menemukan dan mempersiapkan talenta terbaik mereka berikutnya.</h4>
+            </section>
+    
+            <section class="right">
+                <img src="./assets/images/hf.png" alt="">
+            </section>
+    
+        </section>
+    
+        <section class="vision">
+            <section class="vision-left">
+                <h1>Visi</h1>
+                <p>Mempercepat pertumbuhan talenta digital berkualitas Indonesia untuk Industri 4.0 untuk mencapai visi Indonesia menjadi negara ekonomi digital terbesar pada tahun 2030.</p>
+            </section>
+            <section class="vision-right">
+                <img src="./assets/images/vision.png" alt="Vision Illustration">
+            </section>
+        </section>
+        <section class="mission">
+            <section class="mission-left">
+                <img src="./assets/images/mission.png" alt="Mission Illustration">
+            </section>
+            <section class="mission-right">
+                <h1>Misi</h1>
+                <p>Membantu mahasiswa dan industri mengisi kesenjangan di antara mereka melalui inkubasi bakat.</p>
+            </section>
+        </section>
+
+        <section class="partners">
+            <h1>Partners</h1>
+            <div class="partners-logo">
+                <div class="amikom">
+                    <img src="./assets/images/partners/amikom.png" alt="Amikom Yogyakarta logo">
+                </div>
+                <div class="abp">
+                    <img src="./assets/images/partners/abp.png" alt="ABP logo">
+                </div>
+                <div class="amcc">
+                    <img src="./assets/images/partners/amcc.png" alt="AMCC logo">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-item">
+            <p>© 2020 - 2021</p>
+            <img height="24px" src="./assets/images/hero.png" alt="">
+            <p class="hero-logo">Howbizz</p>
+            <p>| All rights reserved</p>     
+        </div>
+    </footer>
+    
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
